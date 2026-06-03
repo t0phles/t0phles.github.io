@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-wrap: wrap;
+        }
+
+        .container {
+            width: 90%;
+            border:10px ;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            width: 150px;
+            height: 150px;
+            background-color: lightgreen; opacity: 0.6;
+            padding: 1em;
+            font-weight: 500;
+            text-align: center;
+            border: 1px solid black; opacity: 1;
+            border-radius: 10px;  
+        }
+
+        .header {
+            width: 100%;
+        }
+    
+        .reminder {
+
+        }
+        .left {
+            position: fixed;
+            background: whitesmoke; 
+            top: 400px;
+            left: 10px;
+            width: 50px;
+            height: 50px;
+            padding: 5px;
+            border: 1px solid black;
+        }
+        .right {
+            position: fixed;
+            z-index: -1;
+            background: whitesmoke; 
+            top: 400px;
+            right: 10px;
+            width: 50px;
+            height: 50px;
+            padding: 5px;
+            border: 1px solid black;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item header">I'm not  set on what i want to do for my final project so this will just be me practicing flexbox etc </div>
+
+        <div class="item box1"></div>
+        <div class="item box2"></div>
+        <div class="item box3"></div>
+        <div class="item box4"></div>
+        <div class="item box5"></div>
+        <div class="item box6"></div>
+        <div class="item box7"></div>
+        <div class="item box8"></div>
+        <div class="item box9"></div>
+    </div>
+    <div class="reminder left">left</div>
+    <div class="reminder right">right</div>
+</body>
+</html>
